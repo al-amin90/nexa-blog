@@ -1,7 +1,13 @@
 import LatestBlogs from "@/components/LatestBlogs/LatestBlogs";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Nexa Blog || Blogs",
+  description: "This is a blog website built with Next.js and Tailwind CSS",
+};
 
 const HomePage = async () => {
-  const res = await fetch("http://localhost:5000/blogs", {
+  const res = await fetch("http://localhost:3000/api/blogs", {
     cache: 'no-store'
   });
   const blogs = await res.json();

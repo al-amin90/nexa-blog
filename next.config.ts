@@ -10,7 +10,7 @@ const nextConfig: NextConfig = {
     ],
   },
   experimental: {
-    // appDir: true, // Required for RSC
+     appDir: true, // Required for RSC
   },
 };
 
