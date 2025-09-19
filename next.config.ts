@@ -9,6 +9,9 @@ const nextConfig: NextConfig = {
       },
     ],
   },
+  experimental: {
+    // appDir: true, // Required for RSC
+  },
 };
 
 export default nextConfig;
